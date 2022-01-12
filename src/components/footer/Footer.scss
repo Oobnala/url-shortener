@@ -1,0 +1,59 @@
+@import '../../styles/abstracts/variables';
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: $color-black;
+  height: 31rem;
+  padding: 7rem 9rem;
+
+  &__logo {
+    z-index: 1;
+
+    & path {
+      fill: #ffffff;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5rem;
+
+    h2 {
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+    }
+
+    button {
+      text-align: left;
+      background-color: transparent;
+      border: none;
+      color: $color-light-gray;
+      margin: 1rem 0rem;
+
+      &:hover {
+        color: $color-cyan;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__social {
+    margin-left: 5rem;
+  }
+
+  &__icon {
+    margin: 0 1rem;
+
+    &:hover path {
+      fill: $color-cyan;
+    }
+  }
+}

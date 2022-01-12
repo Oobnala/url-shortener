@@ -1,0 +1,53 @@
+@import '../../styles/abstracts/variables';
+.landing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  height: 35.1rem;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 60rem;
+  }
+
+  &__title {
+    font-size: 8rem;
+    line-height: 9rem;
+    color: $color-black;
+    letter-spacing: -0.2rem;
+  }
+
+  &__caption {
+    margin-bottom: 4rem;
+    font-size: 2.2rem;
+    color: $color-gray;
+    letter-spacing: 0.15rem;
+  }
+
+  &__btn {
+    width: 19.7rem;
+    height: 5.6rem;
+    border: none;
+    border-radius: 3rem;
+
+    background-color: $color-cyan;
+
+    h2 {
+      color: white;
+    }
+
+    &:hover {
+      background-color: $color-light-cyan;
+      cursor: pointer;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: -25rem;
+  }
+}

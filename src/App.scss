@@ -1,0 +1,25 @@
+.app {
+}
+
+.landing-container {
+  width: 100vw;
+  height: 65vh;
+  background-color: #ffffff;
+  padding: 3rem 15rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.shortener-container {
+  width: 100vw;
+  padding: 3rem 15rem;
+  background: linear-gradient(to bottom, #ffffff 50%, transparent 50%);
+}
+
+.details-container {
+  width: 100vw;
+  padding: 3rem 15rem;
+}

@@ -1,0 +1,71 @@
+@import '../../styles/abstracts/variables';
+.shortener {
+  display: flex;
+  align-items: center;
+  padding: 0rem 6.5rem;
+  border-radius: 1rem;
+  height: 16.8rem;
+  position: relative;
+
+  background: url('../../assets/images/bg-shorten-desktop.svg');
+  background-color: $color-dark-purple;
+  background-size: cover;
+
+  &__input {
+    border: none;
+    border-radius: 1rem;
+    height: 6.4rem;
+    width: 100%;
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+    outline: none;
+    font-size: 2rem;
+
+    &::placeholder {
+      font-size: 2rem;
+      color: $color-gray;
+      line-height: 3.6rem;
+      letter-spacing: 0.15rem;
+    }
+
+    &--error {
+      border-top: 0.3rem solid #f46363;
+      border-bottom: 0.2rem solid #f46363;
+      border-left: 0.3rem solid #f46363;
+      border-right: 0.3rem solid #f46363;
+
+      &::placeholder {
+        font-size: 2rem;
+        color: #f46363;
+        line-height: 3.6rem;
+        letter-spacing: 0.15rem;
+      }
+    }
+  }
+
+  &__error-text {
+    position: absolute;
+    bottom: 2rem;
+    font-style: italic;
+    font-size: 1.6rem;
+    color: #f46363;
+  }
+
+  &__btn {
+    border: none;
+    border-radius: 1rem;
+    height: 6.4rem;
+    width: 15%;
+    margin-left: 3rem;
+    background-color: $color-cyan;
+
+    h2 {
+      color: white;
+    }
+
+    &:hover {
+      background-color: $color-light-cyan;
+      cursor: pointer;
+    }
+  }
+}

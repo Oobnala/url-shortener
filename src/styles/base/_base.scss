@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1 rem = 10px; 10px/16px = 62.5%
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: $color-off-white;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+h4 {
+  font-weight: normal;
+}
