@@ -54,11 +54,12 @@
   &__card {
     background-color: #ffffff;
     width: 35rem;
-    height: 26.7rem;
+    border-radius: 1rem;
     position: relative;
     padding-top: 8rem;
     padding-left: 3rem;
     padding-right: 3rem;
+    padding-bottom: 3rem;
 
     &--1 {
       align-self: flex-start;
@@ -97,5 +98,46 @@
     font-size: 1.5rem;
     line-height: 2.6rem;
     color: $color-gray;
+  }
+}
+
+@media only screen and (max-width: $bp-large) {
+  .details {
+    &__cards {
+      height: 100%;
+      flex-direction: column;
+    }
+
+    &__card {
+      margin: 4rem 0rem;
+
+      &--1 {
+        align-self: center;
+      }
+
+      &--2 {
+        align-self: center;
+      }
+
+      &--3 {
+        align-self: center;
+      }
+    }
+
+    &__divider {
+      width: 0.8rem;
+      height: 80%;
+    }
+
+    &__icon-container {
+      width: 8.8rem;
+      height: 8.8rem;
+      border-radius: 5rem;
+      position: absolute;
+      top: -4.4rem;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
   }
 }

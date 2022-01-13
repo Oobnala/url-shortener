@@ -1,4 +1,11 @@
 @import '../../styles/abstracts/variables';
+
+.shortener__card {
+  width: 100%;
+  padding: 0rem 15rem;
+  background: linear-gradient(to bottom, #ffffff 50%, transparent 50%);
+}
+
 .shortener {
   display: flex;
   align-items: center;
@@ -55,17 +62,33 @@
     border: none;
     border-radius: 1rem;
     height: 6.4rem;
-    width: 15%;
+    width: 18.8rem;
     margin-left: 3rem;
     background-color: $color-cyan;
 
     h2 {
       color: white;
+      font-size: 2rem;
     }
 
     &:hover {
       background-color: $color-light-cyan;
       cursor: pointer;
     }
+  }
+}
+
+.cards {
+  margin-top: 3rem;
+  padding: 0rem 15rem;
+}
+
+@media only screen and (max-width: $bp-large) {
+  .shortener__card {
+    padding: 0 5rem;
+  }
+
+  .cards {
+    padding: 0 5rem;
   }
 }

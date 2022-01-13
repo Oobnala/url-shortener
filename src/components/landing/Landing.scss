@@ -4,14 +4,19 @@
   flex-direction: row;
   align-items: center;
   position: relative;
-  height: 35.1rem;
+
+  margin-bottom: 10rem;
+  width: 100vw;
+  padding: 10rem 15rem;
+
+  overflow-x: hidden;
 
   &__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    width: 60rem;
+    width: 45%;
   }
 
   &__title {
@@ -48,6 +53,60 @@
 
   &__img {
     position: absolute;
-    right: -25rem;
+    right: -10rem;
+  }
+}
+
+@media only screen and (max-width: $bp-largest) {
+  .landing {
+    margin-top: 7rem;
+
+    &__img {
+      right: -25rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-large) {
+  .landing {
+    margin-top: 10rem;
+    padding: 5rem 5rem;
+
+    &__info {
+      width: 35%;
+    }
+
+    &__img {
+      right: -30rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-medium) {
+  .landing {
+    flex-direction: column-reverse;
+    margin-top: 0rem;
+    padding: 0;
+
+    &__img {
+      position: static;
+      margin-right: -30rem;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      margin-top: 5rem;
+    }
+
+    &__title {
+      margin-bottom: 3rem;
+    }
+
+    &__caption {
+    }
   }
 }

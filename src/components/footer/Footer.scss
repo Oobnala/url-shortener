@@ -57,3 +57,26 @@
     }
   }
 }
+
+@media only screen and (max-width: $bp-medium) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    &__links {
+      margin-top: 3rem;
+      flex-direction: column;
+    }
+    &__link {
+      align-items: center;
+      margin-bottom: 3rem;
+      button {
+        text-align: center;
+      }
+    }
+
+    &__social {
+      margin-left: 0rem;
+    }
+  }
+}

@@ -19,6 +19,11 @@ const Nav = () => {
           </li>
         </ul>
       </div>
+      <div className="nav__menu-button">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <div className="nav__btns">
         <button className="nav__btn--login">
           <h2>Login</h2>

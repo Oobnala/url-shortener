@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Nav from './components/nav/Nav';
 import Landing from './components/landing/Landing';
 import Shortener from './components/shortener/Shortener';
@@ -8,17 +7,6 @@ import Footer from './components/footer/Footer';
 import './App.scss';
 
 const App = () => {
-  const [error, setError] = useState(false);
-
-  const shortenHandler = (link) => {
-    console.log(link);
-    if (link.length === 0) {
-      setError(true);
-    } else {
-      setError(false);
-    }
-  };
-
   return (
     <div className="app">
       <div className="landing-container">
@@ -27,11 +15,7 @@ const App = () => {
           <Landing />
         </div>
       </div>
-      <div className="shortener-container">
-        <div>
-          <Shortener error={error} shorten={shortenHandler} />
-        </div>
-      </div>
+      <Shortener />
       <div className="details-container">
         <Details />
       </div>

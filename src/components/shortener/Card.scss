@@ -1,0 +1,60 @@
+@import '../../styles/abstracts/variables';
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  padding: 0rem 2rem;
+  margin: 2rem 0rem;
+
+  &__url {
+    color: $color-black;
+    font-size: 2rem;
+  }
+
+  &__action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__shorturl {
+    color: $color-cyan;
+    font-size: 2rem;
+    line-height: 3.6rem;
+  }
+
+  &__btn {
+    width: 10rem;
+    height: 4rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: $color-cyan;
+    margin-left: 2rem;
+
+    h2 {
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+      background-color: $color-light-cyan;
+      cursor: pointer;
+    }
+
+    &--copied {
+      background-color: $color-black;
+      pointer-events: none;
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+  }
+}

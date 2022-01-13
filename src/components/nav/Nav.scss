@@ -3,8 +3,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 4rem;
-  margin-bottom: 11rem;
+
+  width: 100vw;
+  background-color: #ffffff;
+  padding: 3rem 15rem;
 
   &__links {
     display: flex;
@@ -45,6 +47,16 @@
     }
   }
 
+  &__menu-button {
+    visibility: hidden;
+    div {
+      width: 3.5rem;
+      height: 0.3rem;
+      background-color: $color-gray;
+      margin: 0.7rem 0rem;
+    }
+  }
+
   &__btn {
     &--login {
       background-color: transparent;
@@ -70,6 +82,28 @@
         background-color: $color-light-cyan;
         cursor: pointer;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-large) {
+  .nav {
+    padding: 3rem 5rem;
+  }
+}
+
+@media only screen and (max-width: $bp-medium) {
+  .nav {
+    &__list {
+      display: none;
+    }
+
+    &__menu-button {
+      visibility: visible;
+    }
+
+    &__btns {
+      display: none;
     }
   }
 }
