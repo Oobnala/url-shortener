@@ -11,9 +11,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 54rem;
-    height: 13rem;
-    margin: 8rem;
+    margin: 8rem 0rem;
+    width: 40%;
   }
 
   &__title {
@@ -34,7 +33,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 35rem;
+    height: 40rem;
     width: 100%;
     position: relative;
   }
@@ -54,6 +53,7 @@
   &__card {
     background-color: #ffffff;
     width: 35rem;
+    height: 31rem;
     border-radius: 1rem;
     position: relative;
     padding-top: 8rem;
@@ -67,6 +67,7 @@
 
     &--2 {
       align-self: center;
+      margin: 0 2rem;
     }
 
     &--3 {
@@ -103,6 +104,33 @@
 
 @media only screen and (max-width: $bp-large) {
   .details {
+    &__heading {
+      width: 20%;
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-medium) {
+  .details {
+    padding: 0 2rem;
+
+    &__heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 8rem 0rem;
+      width: 40%;
+    }
+
+    &__title {
+      font-size: 2.8rem;
+    }
+
+    &__caption {
+      font-size: 1.6rem;
+    }
+
     &__cards {
       height: 100%;
       flex-direction: column;
@@ -110,7 +138,7 @@
 
     &__card {
       margin: 4rem 0rem;
-
+      height: 30rem;
       &--1 {
         align-self: center;
       }
@@ -138,6 +166,14 @@
       left: 0;
       right: 0;
       margin: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  .details {
+    &__heading {
+      width: 60%;
     }
   }
 }

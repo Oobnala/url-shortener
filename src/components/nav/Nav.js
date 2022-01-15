@@ -2,7 +2,8 @@ import React from 'react';
 import { ReactComponent as Logo } from '../../assets/images/logo.svg';
 import './Nav.scss';
 
-const Nav = () => {
+const Nav = (props) => {
+  const { showMenu } = props;
   return (
     <nav className="nav">
       <div className="nav__links">
@@ -19,7 +20,7 @@ const Nav = () => {
           </li>
         </ul>
       </div>
-      <div className="nav__menu-button">
+      <div onClick={showMenu} className="nav__menu-button">
         <div></div>
         <div></div>
         <div></div>

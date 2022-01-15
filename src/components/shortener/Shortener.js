@@ -57,12 +57,12 @@ const Shortener = (props) => {
             }
             placeholder="Shorten a link here..."
           />
-          <button onClick={shortenLinkHandler} className="shortener__btn">
-            <h2>Shorten it!</h2>
-          </button>
           {error && (
             <h3 className="shortener__error-text">Please add a link</h3>
           )}
+          <button onClick={shortenLinkHandler} className="shortener__btn">
+            <h2>Shorten it!</h2>
+          </button>
         </div>
       </div>
       <div className="cards">

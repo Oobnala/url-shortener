@@ -5,7 +5,9 @@
 .header {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
+  position: relative;
 }
 
 .details-container {
@@ -20,5 +22,17 @@
 
   .details-container {
     padding: 3rem 5rem;
+  }
+}
+
+@media only screen and (max-width: $bp-large) {
+  .details-container {
+    padding: 0rem 5rem;
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  .details-container {
+    padding: 0rem 2rem;
   }
 }

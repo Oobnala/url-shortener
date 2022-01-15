@@ -1,0 +1,70 @@
+@import '../../styles/abstracts/_variables.scss';
+
+.menu {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  z-index: 1;
+  top: 10rem;
+  right: 5rem;
+  padding: 1rem 2rem;
+  width: 32rem;
+  background-color: $color-purple;
+  color: white;
+  border-radius: 1rem;
+
+  h2 {
+    font-size: 1.8rem;
+    color: white;
+  }
+
+  &__divider {
+    height: 0.2rem;
+    width: 100%;
+    background-color: $color-gray;
+  }
+
+  &__action {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+    margin: 1rem 0rem;
+    height: 4.8rem;
+
+    &--link {
+      background-color: transparent;
+
+      h2 {
+        color: white;
+      }
+
+      h2:hover {
+        color: $color-black;
+        cursor: pointer;
+      }
+    }
+
+    &--signup {
+      background-color: $color-cyan;
+      border-radius: 3rem;
+      width: 100%;
+
+      h2 {
+        color: white;
+      }
+
+      &:hover {
+        background-color: $color-light-cyan;
+        cursor: pointer;
+      }
+    }
+  }
+}

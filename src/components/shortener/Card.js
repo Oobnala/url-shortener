@@ -16,13 +16,11 @@ const Card = (props) => {
   return (
     <div className="card">
       <h3 className="card__url">{url.url}</h3>
+      <div className="card__divider"></div>
       <div className="card__action">
         <h3 className="card__shorturl">{url.shortUrl}</h3>
         {isCopied ? (
-          <button
-            className="card__btn card__btn--copied"
-            onClick={copyUrlHandler}
-          >
+          <button className="card__btn--copied" onClick={copyUrlHandler}>
             <h2>Copied!</h2>
           </button>
         ) : (

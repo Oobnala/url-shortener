@@ -4,12 +4,10 @@
   flex-direction: row;
   align-items: center;
   position: relative;
-
+  overflow-x: hidden;
   margin-bottom: 10rem;
   width: 100vw;
   padding: 10rem 15rem;
-
-  overflow-x: hidden;
 
   &__info {
     display: flex;
@@ -63,6 +61,7 @@
 
     &__img {
       right: -25rem;
+      transform: scale(0.9, 0.9);
     }
   }
 }
@@ -79,6 +78,10 @@
     &__img {
       right: -30rem;
     }
+
+    &__img path {
+      overflow-x: hidden;
+    }
   }
 }
 
@@ -86,11 +89,14 @@
   .landing {
     flex-direction: column-reverse;
     margin-top: 0rem;
-    padding: 0;
 
     &__img {
       position: static;
       margin-right: -30rem;
+    }
+
+    &__img path {
+      overflow-x: hidden;
     }
 
     &__info {
@@ -103,10 +109,34 @@
     }
 
     &__title {
+      font-size: 4.2rem;
       margin-bottom: 3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  .landing {
+    padding: 0rem 2rem;
+    &__info {
+      margin-top: 0rem;
+      width: 100%;
+    }
+
+    &__img {
+      position: static;
+      transform: scale(0.7, 0.7);
+      margin-right: -20rem;
+    }
+
+    &__title {
+      font-size: 4.2rem;
+      line-height: 4.8rem;
     }
 
     &__caption {
+      font-size: 1.8rem;
+      line-height: 3rem;
     }
   }
 }

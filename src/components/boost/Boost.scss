@@ -35,3 +35,31 @@
     }
   }
 }
+
+@media only screen and (max-width: $bp-smallest) {
+  .boost {
+    background: url('../../assets/images/bg-boost-mobile.svg');
+    background-color: $color-dark-purple;
+    background-size: cover;
+
+    height: 100%;
+
+    padding: 10rem 3rem;
+
+    &__title {
+      font-size: 2.8rem;
+    }
+
+    &__btn {
+      border: none;
+      border-radius: 3rem;
+      height: 5.6rem;
+      width: 19.7rem;
+      background-color: $color-cyan;
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
