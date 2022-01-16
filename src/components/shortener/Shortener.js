@@ -26,11 +26,14 @@ const Shortener = (props) => {
             url,
           };
 
+          console.log(newShortUrl);
+
           let urlsArray = urls;
           urlsArray.push(newShortUrl);
           await localStorage.setItem('urls', JSON.stringify(urls));
           setUrls([...urlsArray]);
           console.log(urls);
+          linkInputRef.current.value = '';
         })
         .catch((err) => {
           console.log(err);
@@ -39,7 +42,6 @@ const Shortener = (props) => {
   };
 
   useEffect(() => {
-    console.log('refresh');
     let data = JSON.parse(localStorage.getItem('urls') || '[]');
     setUrls(data);
   }, []);

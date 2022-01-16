@@ -1,8 +1,8 @@
 import './Menu.scss';
 
-const Menu = () => {
+const Menu = ({ menuRef }) => {
   return (
-    <div className="menu">
+    <div ref={menuRef} className="menu">
       <button className="menu__btn menu__btn--link">
         <h2>Features</h2>
       </button>

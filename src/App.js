@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 import Nav from './components/nav/Nav';
 import Landing from './components/landing/Landing';
@@ -10,19 +10,30 @@ import Menu from './components/menu/Menu';
 import './App.scss';
 
 const App = () => {
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
+
+  const menuRef = useRef();
 
   const menuHandler = () => {
-    console.log('MENU!!!!');
     setShowMenu(!showMenu);
   };
+
+  const closeMenuHandler = (e) => {
+    if (menuRef.current && !menuRef.current.contains(e.target)) {
+      setShowMenu(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', closeMenuHandler);
+  }, [menuRef]);
 
   return (
     <div className="app">
       <div className="landing-container">
         <div className="header">
           <Nav showMenu={menuHandler} />
-          {showMenu && <Menu />}
+          {showMenu && <Menu menuRef={menuRef} />}
           <Landing />
         </div>
       </div>
