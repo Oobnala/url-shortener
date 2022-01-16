@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Oobnala/url-shortener)
+- Solution URL: [](https://github.com/Oobnala/url-shortener)
 
 ## My process
 
