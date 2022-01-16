@@ -56,4 +56,4 @@ For this project, I practiced using Flexbox and React Hooks to implement the Url
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Oobnala)
+- Frontend Mentor - [@Oobnala](https://www.frontendmentor.io/profile/Oobnala)
